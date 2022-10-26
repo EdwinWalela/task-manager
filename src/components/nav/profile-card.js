@@ -1,6 +1,6 @@
 function ProfileCard(){
   return (
-    <div className="flex pt-5">
+    <div className="flex pt-5 px-6">
       <img src="https://picsum.photos/id/237/200" className="w-16 h-16 rounded-full mr-3 drop-shadow-lg"/>
       <div className="self-center">
         <p className="text-base font-semibold tracking-wide">Edwin Walela</p>

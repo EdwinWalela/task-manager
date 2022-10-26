@@ -18,15 +18,14 @@ function MenuItem(props){
   let active
 
   return (
-    <div className="flex my-6">
-      <FontAwesomeIcon className="pr-6 text-gray-500" icon={icons[props.title]} size="lg"/>
-      <p className="text-gray-500 flex-1">{props.title}</p>
+    <div className="flex py-3 px-6 cursor-pointer group transition-all duration-200 ease-out hover:border-l-4 border-purple-700">
+      <FontAwesomeIcon className="pr-6 text-gray-500 group-hover:text-purple-700" icon={icons[props.title]} size="lg"/>
+      <p className="text-gray-400 font-medium flex-1 hover:scale-95 transition-all duration-200 ease-out group-hover:text-purple-700">{props.title}</p>
       {props.notificationCount>0 && props.notificationCount <= 10 &&
-        <p className="px-2 py-1 text-white text-xs font-bold rounded-md" style={notificationCountStyle}>{props.notificationCount}</p>
+        <p className="px-2 py-1 text-white text-xs font-bold rounded-md bg-purple-700">{props.notificationCount}</p>
       }
-      
       {props.notificationCount>10 &&
-        <p className="px-2 py-1 text-white text-xs font-bold rounded-md" style={notificationCountStyle}>+10</p>
+        <p className="px-1 py-1 text-white text-xs font-bold rounded-md bg-purple-700">+10</p>
       }
      
      
