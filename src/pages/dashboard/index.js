@@ -6,7 +6,7 @@ function Dashboard(){
     <div className="flex">
       <Nav />
       <CenterContainer />
-      <Nav />
+      {/* <Nav /> */}
     </div>
   )
 }
